@@ -14,6 +14,6 @@ def get_readable_time(seconds: int) -> str:
             time_string += f"{round(days)}days, "
         if hours > 0:
             time_string += f"{round(hours)}h:"
-        time_string += f"{round(minutes)}m:{round(seconds)}s"
+        time_string += f"{round(minutes)}m:{round(seconds):02d}s"
 
     return time_string
