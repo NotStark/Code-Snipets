@@ -1,5 +1,5 @@
 
-def readable_time(seconds: int) -> str:
+def get_readable_time(seconds: int) -> str:
     time_string = ""
     if seconds < 0:
         raise ValueError("Input value must be non-negative")
