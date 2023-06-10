@@ -6,4 +6,4 @@ def update_repo(path : str, git_token : str, git_username : str, repo_name : str
         subprocess.check_output(f'git pull https://{git_token}@github.com/{git_username}/{repo_name}.git', shell=True)
         print("Sucess! Updated the Repo")
     except Exception as e:
-        print(e)
+        return str(e)
